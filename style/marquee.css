@@ -1,0 +1,52 @@
+[move = 'reverse'] {
+  --move: reverse;
+}
+
+.marquee-wrap {
+  position: absolute;
+  top: 0;
+  width: calc(420 * var(--const));
+  height: calc(220 * var(--const));
+  overflow: hidden;
+}
+
+.marquee-text {
+  position: absolute;
+  top: 0;
+  right: calc(-100 * var(--const));
+  width: calc(520 * var(--const));
+  color: var(--VSC-black);
+}
+
+.marquee-track {
+  display: flex;
+  background: var(--VSC-green);
+  clip-path: inset(calc(8 * var(--const)) 0 calc(10 * var(--const)) 0);
+  padding-left: 0.8rem;
+  gap: 0.8rem;
+  width: max-content;
+  animation: runText var(--speed, 34s) linear infinite var(--move, normal);
+}
+
+.marquee-text p {
+  font-family: var(--mada);
+  font-size: calc(48 * var(--const));
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.marquee-top {
+  top: calc(84 * var(--const));
+  transform: rotate(-15deg);
+}
+
+.marquee-bottom {
+  top: calc(140 * var(--const));
+  transform: rotate(10deg);
+}
+
+@keyframes runText {
+  to {
+    transform: translateX(-50%);
+  }
+}

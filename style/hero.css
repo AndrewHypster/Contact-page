@@ -1,0 +1,68 @@
+#hero {
+  position: relative;
+  padding: calc(28 * var(--const)) calc(35 * var(--const));
+  font-family: var(--mada);
+}
+
+.hero-title {
+  font-size: calc(87 * var(--const));
+  font-weight: 700;
+  letter-spacing: -0.04em;
+} .hero-title span {
+  font-size: calc(48 * var(--const));
+  font-weight: 300;
+  letter-spacing: -0.04em;
+  transform: translateY(-0.2em);
+  display: block;
+}
+
+.hero-desc {
+  width: fit-content;
+  display: grid;
+}
+
+.hero-text {
+  width: fit-content;
+  margin-top: calc(56 * var(--const));
+  font-size: calc(48 * var(--const));
+  font-weight: 300;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.hero-text::after {
+  content: "";
+  width: 100%;
+  height: calc(1 * var(--const));
+  margin-top: calc(-2 * var(--const));
+  background: var(--white);
+  display: block;
+}
+
+.hero-arrow {
+  height: calc(90 * var(--const));
+  justify-self: center;
+}
+
+.hero-img {
+  position: absolute;
+  top: calc(59 * var(--const));
+  right: 0;
+  height: calc(380 * var(--const));
+}
+
+.hero-circle-org {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: calc(420 * var(--const));
+}
+
+.hero-circle-yel {
+  position: absolute;
+  z-index: -1;
+  bottom: calc(24 * var(--const));
+  right: calc(80 * var(--const));
+  width: calc(185 * var(--const));
+}
