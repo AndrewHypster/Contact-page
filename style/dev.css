@@ -62,7 +62,7 @@
 }
 
 .dev-line {
-  width: 110%;
+  width: calc(237 * var(--const));
   transform: translate(calc(-17 * var(--const)), calc(-26 * var(--const)));
 }
 
